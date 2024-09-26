@@ -1,0 +1,157 @@
+/* Adicionar aqui toda a estilização criada para sua aplicação. */
+
+/* Importamos a fonte Barlow */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;  
+    background-color: black;
+}
+
+
+/* Criando uma variavel no CSS */
+/* o root precisa de ":" pois ele não é uma classe, id, etc. */
+/* NÂO DEIXA OS - GRUDADOS EM ALGO E DEIXA O VAR() GRUDADO NO PARENTESES*/
+
+:root {
+    --tamanho-header: 80px;
+    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-footer: 65px;
+}
+
+/* Estilizando a header */
+.header {
+    height: var(--tamanho-header);
+    border-bottom: 2px solid #32d9cd;
+
+}
+
+/* Estilizando o container */
+.container {
+    display: flex;
+    width: 80%;  /* Largura */
+    margin: auto;
+}
+
+/* Estilizando a header e container juntos */
+.header .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/* Estilizando tudo o que for tag "a" na header. Hierarquia */
+.header a {
+    text-decoration: none;
+    color: #e3b062;
+}
+
+/* Estilizando a tag "agora" */
+.agora{
+    font-weight: 800; /* Grossura da fonte */
+}
+
+/* Estilizando a navbar */
+.navbar {
+    width: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: #e3b062;    
+}
+
+/* Estilizando o titulo */
+
+.titulo{
+    color: #32d9cd;
+    width: fit-content;
+    font-weight: 800;
+}
+
+/* Estilizando o banner */
+
+.banner {
+    height: var(--tamanho-banner);
+    color: white;
+    background-image: url('../assets/imgs/bg-jelly-fish-para_outras_pags.png');
+    background-size: cover;
+}
+
+/* Estilizando o container dentro do banner */
+
+.banner .container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Estilizando o que for tag p dentro do container que ta dentro do banner */
+.banner .container .p {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+}
+
+/* Estilizando o que for tag "span" dentro do container que ta dentro do banner */
+.banner .container span {
+    font-weight: 800;
+}
+
+/* Estilizando o Social (Missão, visão e valores)*/
+
+.social {
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilizando os boxes dentro do container que ta dentro do Social */
+
+.social .container .boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0; /* O 0 dentro do padding pois influencia apenas um eixo, seja vertical ou horizontal. Nesse caso ta influenciando o Y e não o X*/
+}
+
+/* Estilizando o Box */
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box img {
+    width: 170px;
+}
+
+/* Estilizando o footer */
+
+.footer {
+    background-color: #32d9cd;
+    height: var(--tamanho-footer);
+    color: #fff;
+    display: flex;
+    font-size: 15px;
+}
+
+/* Estilizando o container dentro do footer */
+
+.footer .container {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilizando o tamanho da versão */
+.version {
+    font-size: 12px;
+}
+
