@@ -155,3 +155,147 @@ body {
     font-size: 12px;
 }
 
+/* Estilizando o login */
+
+.login {
+    background-image: url('../assets/imgs/bg-jelly-fish-para_outras_pags.png');
+    height: var(--tamanho-login);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: rgb(224, 224, 224);
+}
+
+.card-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    color: #d77a99;
+}
+
+.login .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+}
+
+.campo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h1 {
+    color:  #d77a99;
+}
+
+.login span {
+    align-self: flex-start;
+    color:  #d77a99;
+    font-weight: 700;
+}
+
+.login input {
+    height: 40px;
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    border: 2px solid #32d9cd;
+    text-align: center;
+}
+
+.login .botao {
+    background-color: rgb(255, 14, 114);
+    border-radius: 8%;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    color: white;
+    border: none;
+    font-size: 19px;
+}
+
+/* Cadastro */
+
+.cadastro {
+    background-image: url('../assets/imgs/bg-jelly-fish-para_outras_pags.png');
+    height: var(--tamanho-login);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cadastro .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: rgb(224, 224, 224);
+}
+
+.cadastro h2{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: #d77a99;
+}
+
+.cadastro .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cadastro span {
+    align-self: flex-start;
+    color:#d77a99;
+    font-weight: 700;
+}
+
+.cadastro input {
+    height: 35px;
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    border: 2px solid #32d9cd;
+    text-align: center;
+    display: flex;
+}
+
+.cadastro .botao {
+    background-color: rgb(255, 14, 114);
+    border-radius: 8px;
+    width: 130px;
+    height: 30px;
+    color: white;
+    border: none;
+    font-size: large;
+}
