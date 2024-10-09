@@ -119,6 +119,7 @@ body {
     display: table-column;
     justify-content: space-between;
     width: 100%;
+    text-align: center;
     padding: 100px; /* O 0 dentro do padding pois influencia apenas um eixo, seja vertical ou horizontal. Nesse caso ta influenciando o Y e não o X*/
 }
 
